@@ -1,15 +1,2 @@
-#!/bin/bash
-
-for file in *
-do
-    if [[ -f $file ]]
-    then
-        filetype=$(file -b --mime-type "$file")
-        if [[ $filetype == "inode/x-empty" ]]
-        then
-            echo "$file: $filetype"
-        else
-            echo "$file: $(file -b "$file")"
-        fi
-    fi
-done
+0 string SCHOOL School data
+! :mime School
